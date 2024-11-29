@@ -14,7 +14,10 @@ app.use(express.json());
 
 // Home route (welcome message)
 app.get('/', (req, res) => {
-  res.send('Welcome to The Backend Code');
+  res.send(`
+    <h1>Welcome to The Backend Code</h1>
+    <h1>Check out the <a href="/api/userData" target="_blank">User Get API</a></h1>
+  `);
 });
 
 // Use the operation router under the "/api" prefix
