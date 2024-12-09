@@ -15,8 +15,21 @@ app.use(express.json());
 // Home route (welcome message)
 app.get('/', (req, res) => {
   res.send(`
-    <h1>Welcome to The Backend Code</h1>
-    <h1>Check out the <a href="/api/userData" target="_blank">User Get API</a></h1>
+   <h1>Welcome to The Backend Code</h1>
+
+<div style="position: relative; width: 90%; text-align: left; padding: 10px; background-color: #f4f4f9;">
+  <h2>Check out the <br> <a href="/api/userData" target="_blank" style="color: #007bff; text-decoration: none; font-weight: 600;">User Get API</a></h2>
+  <br />
+  </div>
+
+<div style="position: relative; width: 90%; text-align: left; padding: 10px; background-color: #f4f4f9;">
+  <h2>Check out the <br><a href="/api/userRegistration" target="_blank" style="color: #007bff; text-decoration: none; font-weight: 600;">User Register Post API</a></h2>
+  <br />
+  </div>
+ 
+
+
+<h2 style="text-align: center; color: #333;">Please use the above APIs for testing</h2>
   `);
 });
 
